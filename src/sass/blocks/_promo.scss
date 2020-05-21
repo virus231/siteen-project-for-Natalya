@@ -1,0 +1,92 @@
+.promo {
+
+    &-pic {
+        cursor: pointer;
+        position: relative;
+        z-index: 111;
+    }
+
+    .help {
+        position: absolute;
+        width: 700px;
+        height: 200px;
+        display: inline-block;
+        // background: #eee;
+        border: 2px solid rgb(93, 0, 101);
+        padding: 20px;
+        margin: 0 55px;
+        top: -10px;
+        left: 200px;
+        opacity: 0;
+        transition: all .33s;
+        z-index: -1;
+
+        &-two {
+            margin: 0 35px;
+            left: -340px;
+            z-index: -1;
+        }
+
+        .houses {
+            width: 300px;
+
+            p {
+                width: 280px;
+                
+            }
+
+            .watch {
+                color: #ffffff;
+                text-decoration: none;
+                &:hover {
+                    color: $gray;
+                }
+            }
+        }
+    }
+
+    .help.active {
+        opacity: 1;
+    }
+    
+    .house {
+        position: absolute;
+        width: 700px;
+        height: 200px;
+        display: inline-block;
+        // background: #eee;
+        border: 2px solid rgb(93, 0, 101);
+        padding: 20px;
+        margin: 0 55px;
+        top: -10px;
+        left: 200px;
+        opacity: 0;
+        transition: all .33s;
+        z-index: -1;
+
+        &-two {
+            margin: 0 35px;
+            left: -340px;
+            z-index: -1;
+        }
+
+        .houses {
+            width: 300px;
+
+            p {
+                width: 280px;
+                
+            }
+
+            a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+        }
+    }
+
+
+    .house.active {
+        opacity: 1;
+    }
+}

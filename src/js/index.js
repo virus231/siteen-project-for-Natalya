@@ -1,7 +1,9 @@
-const burger = document.getElementById('burger');
-const ul = document.querySelector('nav ul');
+$("body").on("mouseenter", "[data-help]", function () {
+    $(".help").removeClass("active");
+    $("#"+$(this).data("help")+"").addClass("active");
+});
 
-burger.addEventListener('click', () => {
-	burger.classList.toggle('show-x');
-	ul.classList.toggle('show');
+$("body").on("mouseenter", "[data-house]", function () {
+    $(".house").removeClass("active");
+    $("#"+$(this).data("house")+"").addClass("active");
 });
