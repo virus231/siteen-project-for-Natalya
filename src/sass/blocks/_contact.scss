@@ -1,0 +1,54 @@
+
+.contact {
+    position: relative;
+
+    
+    &::before {
+        content: url('../../images/Daub.svg');
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: auto;
+    }
+    &-about {
+
+        &__title {
+            font-family: 'Dancing Script';
+            font-size: 82px;
+        }
+
+        &__desc {
+            font-size: 20px;
+            font-weight: 300;
+        }
+    }
+
+    &-brif {
+        &__title {
+            font-family: 'Dancing Script';
+            font-size: 64px;
+        }
+
+        &__desc {
+            font-size: 18px;
+            font-weight: 300;
+        }
+    }
+
+    .about-me {
+        font-size: 18px;
+        position: relative;
+
+        &::before {
+            content: url('../../images/Decoration-2.svg');
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: auto;
+            z-index: -1;
+            top: -55px;
+            left: -60px;
+        }
+
+    }
+}

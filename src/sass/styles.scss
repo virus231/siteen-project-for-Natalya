@@ -15,6 +15,10 @@ body {
     max-width: 1630px !important;
 }
 
+.container-fluid {
+    
+}
+
 ::selection {
     color: $pink-dark;
 }
@@ -25,4 +29,6 @@ body {
 @import 'blocks/about';
 @import 'blocks/principles';
 @import 'blocks/process';
+@import 'blocks/contact';
+
 
