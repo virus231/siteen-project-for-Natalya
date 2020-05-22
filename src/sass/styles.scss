@@ -1,19 +1,28 @@
 @import './base/mixins';
 @import './base/vars';
+@import './base/fonts';
+
 
 
 body {
     font-size: 16px;
     background: #111111;
     color: #E6E6E6;
-    font-family: 'Comfortaa', 'Dancing Script', cursive;
+    font-family: 'Comfortaa', 'Dancing Script', 'Megante', cursive;
 }
 
 .container {
     max-width: 1630px !important;
 }
 
+::selection {
+    color: $pink-dark;
+}
+
 @import 'blocks/header';
 @import 'blocks/promo';
 @import 'blocks/footer';
 @import 'blocks/about';
+@import 'blocks/principles';
+@import 'blocks/process';
+

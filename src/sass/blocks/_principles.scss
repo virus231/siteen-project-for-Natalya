@@ -1,0 +1,28 @@
+.principles {
+
+    &-item {
+
+        h4 {
+            font-size: 34px;
+        }
+
+        .title-principles {
+            font-family: 'Megante';
+            background: linear-gradient(98deg, rgba(57, 1, 62, 1) 0%, rgba(99, 0, 108, 1) 17%, rgba(146, 0, 161, 1) 48%, rgba(99, 0, 108, 1) 69%, rgba(57, 1, 62, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: $pink-dark;
+            font-size: 72px;
+        }
+
+        span {
+            color: #C0C0C0;
+            font-size: 14px;
+        }
+    }
+
+}
+
+.block {
+    border: 2px solid rgb(93, 0, 101);
+}
