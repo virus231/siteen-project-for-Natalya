@@ -58,3 +58,11 @@
         }
     }
 }
+
+.swiper-button-next::after, .swiper-container-rtl .swiper-button-prev::after {
+    color: wheat;
+}
+
+.swiper-button-prev::after, .swiper-container-rtl .swiper-button-next::after {
+    color: wheat;
+}
