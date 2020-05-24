@@ -2,6 +2,7 @@
 .contact {
     position: relative;
 
+
     
     &::before {
         content: url('../../images/Daub.svg');
@@ -50,5 +51,36 @@
             left: -60px;
         }
 
+    }
+}
+
+
+@media (max-width: 1360px) {
+    .contact {
+
+        &-wrapper {
+            flex-direction: column-reverse;
+            align-content: center;
+        }
+
+        &-wrap {
+            max-width: 65%;
+        }
+
+        &-about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-brif {
+            flex-direction: column;
+        }
+
+
+    }
+
+    .wrap {
+        text-align: center;
     }
 }

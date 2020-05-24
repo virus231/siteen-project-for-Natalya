@@ -8,6 +8,12 @@
         a {
             text-decoration: none;
             color: white;
+            transition: all .33s;
+
+            &:hover {
+                color: rgb(195, 122, 255);
+
+            }
         }
         
     }
@@ -16,6 +22,12 @@
         a {
             text-decoration: none;
             color: white;
+            transition: all .33s;
+
+            &:hover {
+                color: rgb(195, 122, 255);
+
+            }
         }
     }
 
