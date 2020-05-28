@@ -1,0 +1,35 @@
+.origin {
+    background: url('../images/main-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    height: 100vh;
+
+    &-block {
+        align-items: center;
+        margin-top: 200px;
+
+        h1 {
+            font-family: Comfortaa;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 100px;
+            color: $pink-light;
+        }
+
+        p {
+            font-family: Comfortaa;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            color: $pink-light;
+        }
+
+        span {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 26px;
+        }
+    }
+}

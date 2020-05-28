@@ -1,3 +1,5 @@
+
+
 .logo {
     overflow: hidden;
 
@@ -29,15 +31,14 @@
 }
 
 .raffle {
-    border: 2px solid rgb(93, 0, 101);
-    border-radius: 10px;
-    width: 235px;
-
+    
     &-link {
+        border: 2px solid rgb(93, 0, 101);
         text-decoration: none;
-        color: $gray;
+        color: #BDBDBD;;
         font-size: 20px;
         transition: all .33s;
+        padding: 5px 10px 5px 10px;
 
         &:hover {
             text-decoration: none;
@@ -48,7 +49,7 @@
 
 .menu {
     &__link {
-        color: $gray;
+        color: #BDBDBD;
         transition: all .33s;
         
 
@@ -65,12 +66,12 @@
 
         &-border {
             border: 2px solid rgb(93, 0, 101);
-            border-radius: 10px;
         }
-
 
     }
 }
+
+
 
 .menu-mobile {
     display: none;
