@@ -33,3 +33,32 @@
         }
     }
 }
+
+.down-block {
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        box-shadow: 0px 0px 60px #E700FF;
+        height: auto;
+    }
+
+    &__img {
+        
+    }
+}
+
+.post, .tel {
+    a {
+        color: #BDBDBD;
+        transition: all .35s;
+        font-size: 20px;
+
+        &:hover {
+            color: $pink-light;
+        }
+    }
+}
