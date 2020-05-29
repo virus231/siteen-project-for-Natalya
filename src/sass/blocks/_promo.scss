@@ -9,7 +9,8 @@
             &:after {
                 content: url('../images/span.svg');
                 position: absolute;
-                bottom: 0;
+                bottom: -100px;
+                left: -100px;
                 display: block;
                 z-index: 100;
             }
@@ -24,7 +25,9 @@
         width: 700px;
         height: 200px;
         display: inline-block;
-        border: 2px solid rgb(93, 0, 101);
+        border: 3px solid;
+        border-image: linear-gradient(98deg, rgba(57, 1, 62, 1) 0%, rgba(99, 0, 108, 1) 17%, rgba(146, 0, 161, 1) 48%, rgba(99, 0, 108, 1) 69%, rgba(57, 1, 62, 1) 100%);
+        border-image-slice: 1;
         padding: 20px;
         margin: 0 55px;
         top: -10px;
@@ -65,7 +68,9 @@
         width: 700px;
         height: 200px;
         display: inline-block;
-        border: 2px solid rgb(93, 0, 101);
+        border: 3px solid;
+        border-image: linear-gradient(98deg, rgba(57, 1, 62, 1) 0%, rgba(99, 0, 108, 1) 17%, rgba(146, 0, 161, 1) 48%, rgba(99, 0, 108, 1) 69%, rgba(57, 1, 62, 1) 100%);
+        border-image-slice: 1;
         padding: 20px;
         margin: 0 55px;
         top: -10px;
