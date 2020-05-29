@@ -37,17 +37,35 @@
 .down-block {
     cursor: pointer;
     position: relative;
+    color: $pink-light;
+    transition: all .33s;
+    text-shadow: 0px 0px 60px #E700FF;
+
+
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+    // box-shadow: 0px 0px 60px #E700FF;
+
+    }
 
     &::after {
         content: '';
         display: block;
         position: absolute;
-        box-shadow: 0px 0px 60px #E700FF;
-        height: auto;
+        top: 0;
+
+        height: 100%;
+        width: 100%;
+        z-index: -2;
     }
 
     &__img {
         
+    }
+    
+    p {
+        text-shadow: -2px -4px 20px #e700ff;
     }
 }
 
