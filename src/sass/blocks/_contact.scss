@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: right;
-    height: 90vh;
+    height: 95vh;
     padding-top: 70px;
 }
 
@@ -43,8 +43,34 @@
     border-image: linear-gradient(98deg, rgba(57, 1, 62, 1) 0%, rgba(99, 0, 108, 1) 17%, rgba(146, 0, 161, 1) 48%, rgba(99, 0, 108, 1) 69%, rgba(57, 1, 62, 1) 100%);
     border-image-slice: 1;
     padding: 40px;
-    bottom: -100px;
+    bottom: -170px;
     left: 420px;
     transition: all .44s;
     z-index: -1;
+}
+
+
+@media (max-width: 1440px) {
+    .contact-block {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        align-items: center;
+    }
+
+    .contact-wrap {
+        max-width: 75%;
+        margin-top: 20px;
+        margin: 0 auto;
+
+    }
+
+    .about-me {
+        position: absolute;
+        bottom: 100px;
+        width: 500px;
+    }
+
+    .about-block {
+        max-width: 70%;
+    }
 }

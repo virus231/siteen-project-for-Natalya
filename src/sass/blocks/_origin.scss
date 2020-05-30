@@ -4,6 +4,7 @@
     background-size: cover;
     background-position-y: bottom;
     height: 100vh;
+    padding-top: 80px;
 
     &-block {
         align-items: center;
@@ -78,5 +79,21 @@
         &:hover {
             color: $pink-light;
         }
+    }
+}
+
+@media (max-width: $screen-md-max) {
+    .down-wrapper {
+        margin-top: 300px;
+    }
+
+    .origin-block h1 {
+        font-size: 64px;
+    }
+}
+
+@media (max-width: 790px) {
+    .down-wrapper{
+        margin-top: 300px;
     }
 }
