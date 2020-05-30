@@ -4,11 +4,11 @@
     background-size: cover;
     background-position-y: bottom;
     height: 100vh;
-    padding-top: 80px;
+    // padding-top: 80px;
 
     &-block {
         align-items: center;
-        margin-top: 200px;
+        // margin-top: 200px;
 
         h1 {
             font-family: Comfortaa;
@@ -33,6 +33,14 @@
             font-size: 26px;
         }
     }
+
+    &-bottom {
+        padding-top: 200px;
+    }
+}
+
+.grap {
+    margin-top: 100px;
 }
 
 .down-block {
@@ -90,6 +98,16 @@
     .origin-block h1 {
         font-size: 64px;
     }
+}
+
+@media (max-width: 1024px) {
+    .origin-bottom {
+        padding-top: 400px;
+    }
+    
+    // .grap {
+    //     padding-top: 250px;
+    // }
 }
 
 @media (max-width: 790px) {
