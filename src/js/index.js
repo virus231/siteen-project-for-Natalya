@@ -8,37 +8,6 @@ $("body").on("mouseenter", "[data-house]", function () {
   $("#" + $(this).data("house") + "").addClass("active");
 });
 
-var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-});
-
-// $(document).ready(function(){
-//   $(".down-block").on("click","a", function (event) {
-//       //отменяем стандартную обработку нажатия по ссылке
-//       event.preventDefault();
-
-//       //забираем идентификатор бока с атрибута href
-//       var id  = $(this).attr('href'),
-
-//       //узнаем высоту от начала страницы до блока на который ссылается якорь
-//           top = $(id).offset().top;
-       
-//       //анимируем переход на расстояние - top за 1500 мс
-//       $('body,html').animate({scrollTop: top}, 3500);
-//   });
-// });
-
 $(document).ready(function(){
   $("#calc_l_m_range").on("input", function(){
     $("#calc_l_meters").val(this.value);
@@ -47,7 +16,7 @@ $(document).ready(function(){
 
 
 var linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
-    V = 1;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
+    V = 0.5;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
 for (var i = 0; i < linkNav.length; i++) {
     linkNav[i].addEventListener('click', function(e) { //по клику на ссылку
         e.preventDefault(); //отменяем стандартное поведение
@@ -69,3 +38,16 @@ for (var i = 0; i < linkNav.length; i++) {
         }
     }, false);
 }
+
+
+$('#chk4, #chk5, #chk6').click(function () {
+  if ($(this).is(':checked')) {
+    $('#chk4, #chk5, #chk6').not(this).prop('checked', false);
+  }
+});
+
+$('#chk, #chk2, #chk3').click(function () {
+  if ($(this).is(':checked')) {
+    $('#chk, #chk2, #chk3').not(this).prop('checked', false);
+  }
+});

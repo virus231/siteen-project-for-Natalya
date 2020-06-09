@@ -90,6 +90,20 @@
     }
 }
 
+.link-item {
+    a {
+        img {
+            transition: all .33s;
+            
+            &:hover {
+                transform: scale(1.33);
+            }
+        }
+    }   
+}
+
+
+
 @media (max-width: $screen-md-max) {
     .down-wrapper {
         margin-top: 300px;

@@ -5,6 +5,8 @@
         position: relative;
         z-index: 111;
 
+        
+
         &-span {
             &:after {
                 content: url('../images/span.svg');
@@ -15,12 +17,7 @@
                 z-index: 100;
             }
         }
-
-        
-
-        
     }
-
 
     .help {
         position: absolute;
@@ -49,9 +46,12 @@
         .houses {
             width: 300px;
 
+
             p {
                 width: 280px;
             }
+
+
 
             .watch {
                 color: #ffffff;
@@ -65,22 +65,22 @@
 
     .help.active {
         opacity: 1;
-        transform: translateX(100px);
+        transform: translateX(25px);
 
     }
     .help-two.active {
         opacity: 1;
-        transform: translateX(-100px);
+        transform: translateX(-20px);
     }
 
     .house-tw.active {
         opacity: 1;
-        transform: translateX(100px);
+        transform: translateX(25px);
     }
 
     .house-th.active {
         opacity: 1;
-        transform: translateX(-100px)
+        transform: translateX(-20px)
     }
     
     .house {
@@ -98,6 +98,10 @@
         opacity: 0;
         transition: all .44s;
         z-index: -1;
+
+        &-tw {
+            height: 240px;
+        }
 
         &-two {
             margin: 0 35px;

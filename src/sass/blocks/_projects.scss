@@ -1,0 +1,55 @@
+.project {
+	transition: all .33s;
+	
+	&-item {
+	
+	transition: all .33s;
+
+		cursor: pointer;
+
+		&:hover .content-bottom{
+			opacity: 0;
+		}
+
+		&:hover .content-top {
+			opacity: 1;
+		} 
+		
+	}
+
+	&-img {
+		position: relative;
+	}
+}
+
+.content-top {
+	position: absolute;
+	padding: 10px;
+	opacity: 0;
+	top: 0;
+	height: 100%;
+	width: 560px;
+	// left: 14px;
+	// right: -31px;
+	z-index: 100;
+	background-color: #111111c2;
+	transition: all .33s;
+
+}
+
+.content-bottom {
+	position: absolute;
+	padding: 10px;
+	bottom: 0;
+	width: 560px;
+	// left: 14px;
+	// right: -31px;
+	z-index: 100;
+	background-color: #111111c2;
+	transition: all .33s;
+	
+}
+
+
+
+
