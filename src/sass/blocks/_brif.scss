@@ -34,13 +34,13 @@ $transitionSpeed: 200ms;
 
 
 .main-brif {
-    width: 100%;
+    width: 90%;
     border: 3px solid;
     border-image: linear-gradient(98deg, rgba(57, 1, 62, 1) 0%, rgba(99, 0, 108, 1) 17%, rgba(146, 0, 161, 1) 48%, rgba(99, 0, 108, 1) 69%, rgba(57, 1, 62, 1) 100%);
     border-image-slice: 1;
 
     &-form {
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -248,4 +248,10 @@ input[type=range] {
         
     }
 
+}
+
+@media (max-width: 1580px) {
+    .row-form {
+        flex-wrap: wrap;
+    }
 }

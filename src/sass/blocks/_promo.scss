@@ -5,8 +5,6 @@
         position: relative;
         z-index: 111;
 
-        
-
         &-span {
             &:after {
                 content: url('../images/span.svg');
@@ -135,19 +133,58 @@
 
 @media (max-width: 1565px) {
     .projects-lists {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
 
     .projects-item {
-        margin-bottom: 40px;
+        margin-top: 40px;
     }
 }
+
+@media (min-width: 1301px ) {
+    #mob1,
+    #mob2,
+    #mob3,
+    #mob4 {
+        display: none !important;
+    }
+} 
 
 @media (max-width: 1300px) {
     .promo .help,
     .promo .house {
         margin: 0 -20px;
+    }
+
+    #log1,
+    #log2,
+    #log3,
+    #log4 {
+        display: none !important;
+    }
+
+
+    .promo-pic {
+        position: relative;
+    }
+
+    #mob1,
+    #mob2,
+    #mob3,
+    #mob4 {
+        display: flex;
+        position: absolute;
+        // display: block !important;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #000000c2;
+    }
+
+    .watch {
+        color: #ffabff;       
     }
 }
 

@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: right;
-    height: 95vh;
+    height: 100vh;
     padding-top: 70px;
 }
 
@@ -72,6 +72,13 @@
 
     .about-block {
         max-width: 70%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .about-me {
+        bottom: 30px;
+        width: 400px;  
     }
 }
 
