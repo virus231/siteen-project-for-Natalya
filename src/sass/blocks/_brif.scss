@@ -45,21 +45,13 @@ $transitionSpeed: 200ms;
 }
 
 
-.left-block {
-    p {
-        font-family: Comfortaa;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-    }
-}
-
+.left-block,
 .right-block {
     p {
         font-family: Comfortaa;
         font-style: normal;
         font-weight: bold;
-        font-size: 24px;
+        font-size: 28px;
     }
 }
 
@@ -250,8 +242,19 @@ input[type=range] {
 
 }
 
-@media (max-width: 1580px) {
+.row-form {
+    width: 100%;
+}
+
+@media (max-width: 1060px) {
     .row-form {
         flex-wrap: wrap;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .right-block {
+        margin-top: 50px;
+        width: 10   0%;
     }
 }

@@ -87,3 +87,15 @@
         display: none;
     }
 }
+
+@media (max-width: $screen-sm-max) {
+    .contact {
+        height: 110vh;
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    .contact {
+        height: 1370px;
+    }
+}

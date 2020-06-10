@@ -102,6 +102,26 @@
     }   
 }
 
+@media (min-width: $screen-lg-min) and (max-width: 1024px) {
+    .grap {
+        margin-top: 70px !important;
+    }
+}
+
+@media (max-width: $screen-md-max) {
+    .grap {
+        margin-top: 50px !important;
+    }
+}
+
+
+
+@media (max-width: 625px) {
+    .grap {
+        margin-top: 0px !important;
+    }
+}
+
 
 
 @media (max-width: $screen-md-max) {

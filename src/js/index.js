@@ -51,3 +51,25 @@ $('#chk, #chk2, #chk3').click(function () {
     $('#chk, #chk2, #chk3').not(this).prop('checked', false);
   }
 });
+
+
+const hamburger = document.querySelector(".hamburger");
+    const menu = document.querySelector("menu");
+
+    if (hamburger)
+    {
+        hamburger.onclick = () =>
+        {
+            hamburger.classList.toggle("active");
+            menu.classList.toggle("active");
+        }
+    }
+
+    document.querySelectorAll("menu a").forEach((link) =>
+    {
+        link.onclick = () =>
+        {
+            hamburger.classList.remove("active");
+            menu.classList.remove("active");
+        }
+    });
