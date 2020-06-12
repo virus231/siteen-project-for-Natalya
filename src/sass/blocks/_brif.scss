@@ -69,7 +69,7 @@ $transitionSpeed: 200ms;
     white-space: nowrap;
     color: white;
     user-select: none;
-    font-size: 20px;
+    font-size: 18px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 100;
@@ -89,6 +89,9 @@ $transitionSpeed: 200ms;
         transition: all ease-out $transitionSpeed;
     }
 }
+
+
+
 
 .inp-check:checked+label {
     border: 3px solid white;
@@ -256,5 +259,26 @@ input[type=range] {
     .right-block {
         margin-top: 50px;
         width: 10   0%;
+    }
+}
+
+@media (max-width: 375px) {
+    .inp-check+label {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    input[type="text"] {
+        background: none;
+        border: none;
+        font-size: 18px;
+        border-bottom: 3px solid white;
+        color: #D0D0D0;
+        outline: none;
+    }
+
+    input[type="tel"] {
+        width: 150%;
     }
 }

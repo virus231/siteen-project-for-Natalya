@@ -50,6 +50,13 @@
 	
 }
 
-
+@media (max-width: 425px) {
+	#mob1 p,
+	#mob2 p,
+	#mob3 p, 
+	#mob4 p {
+		font-size: 14px;
+	}
+}
 
 

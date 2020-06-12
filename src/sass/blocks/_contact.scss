@@ -82,6 +82,12 @@
     }
 }
 
+@media (max-width: 768px ){
+    .contact {
+        height: 115vh;
+    }
+}
+
 @media (max-width: $screen-md-max) {
     .about-me {
         display: none;
@@ -94,8 +100,21 @@
     }
 }
 
-@media (max-width: $screen-xs-max) {
+@media  (max-width: $screen-xs-max) {
     .contact {
         height: 1370px;
     }
 }
+
+@media (max-width: 425px) {
+    .contact {
+        height: 1490px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+    .contact {
+        height: 1520px;
+    }
+}
+
